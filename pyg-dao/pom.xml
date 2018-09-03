@@ -13,4 +13,47 @@
     <artifactId>pyg-dao</artifactId>
     <packaging>jar</packaging>
 
+
+    <!-- dao持久层:访问数据库 1,mybatis,2,数据源 3,mysql驱动 ,4,依赖pojo -->
+    <dependencies>
+        <!-- Mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.miemiedev</groupId>
+            <artifactId>mybatis-paginator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
+        <!-- MySql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!-- 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+        <!-- pojo -->
+        <dependency>
+            <groupId>com.pyg</groupId>
+            <artifactId>pyg-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- common -->
+        <dependency>
+            <groupId>com.pyg</groupId>
+            <artifactId>pyg-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
