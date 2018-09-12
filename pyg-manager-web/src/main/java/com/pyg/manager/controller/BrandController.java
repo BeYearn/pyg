@@ -14,7 +14,7 @@ import com.pyg.pojo.TbBrand;
 public class BrandController {
 	
 	//注入远程服务对象
-	@Reference(timeout=10000000)
+	@Reference(timeout=10000000)  // 调用服务时的超时时间
 	private BrandService brandService;
 	
 	/**
