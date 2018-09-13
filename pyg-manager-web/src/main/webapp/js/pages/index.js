@@ -118,6 +118,16 @@ function RetSelecteds() {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 //影像力换一换
 var getyxl = jQuery('#picLBxxl li').eq(0).width();
 /*获取li的宽度*/
