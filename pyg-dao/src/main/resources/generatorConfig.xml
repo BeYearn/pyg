@@ -30,6 +30,7 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
+        <!--targetProject 都是从本项目根目录开始的 此处的话 即 pyg-dao这一级开始的 -->
         <!-- targetProject:生成PO类的位置 -->
         <javaModelGenerator targetPackage="com.pyg.pojo" targetProject="../pyg-pojo/src/main/java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
