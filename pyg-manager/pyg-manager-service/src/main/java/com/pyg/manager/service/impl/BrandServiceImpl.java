@@ -14,7 +14,9 @@ import com.pyg.mapper.TbBrandMapper;
 import com.pyg.pojo.TbBrand;
 import com.pyg.pojo.TbBrandExample;
 import com.pyg.pojo.TbBrandExample.Criteria;
-@Service
+
+
+@Service   //注意使用dubbo的service注解
 public class BrandServiceImpl implements BrandService {
 
 	//注入mapper接口代理对象
@@ -23,7 +25,7 @@ public class BrandServiceImpl implements BrandService {
 
 	@Override
 	public List<TbBrand> findAll() {
-		//创建example对象
+		//创建example对象  即查询条件
 		TbBrandExample example = new TbBrandExample();
 		// 查询
 		List<TbBrand> list = brandMapper.selectByExample(example);

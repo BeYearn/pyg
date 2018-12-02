@@ -7,11 +7,14 @@
 	<!-- 加载spring容器 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
+        <!--  https://www.cnblogs.com/EasonJim/p/6709314.html
+        classpath：只会到你的class路径中查找找文件。
+            classpath*：不仅包含class路径，还包括依赖jar文件中（class路径）进行查找。
+            此处加载了xxx-dao和xxx-service  该项目需要除自己外dao的spring工程也起来-->
 		<param-value>classpath*:spring/applicationContext*.xml</param-value>
 	</context-param>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	
 	
 </web-app>

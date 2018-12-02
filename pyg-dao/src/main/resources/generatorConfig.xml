@@ -15,7 +15,7 @@
 
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.0.165:3306/pinyougoudb" userId="root"
+                        connectionURL="jdbc:mysql://104.243.20.253:3306/pinyougoudb" userId="root"
                         password="root">
         </jdbcConnection>
         <!-- <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
@@ -71,4 +71,11 @@
         <table tableName="tb_goods_desc"></table>
         <table tableName="tb_pay_log"></table>
     </context>
+
+    <!--真特码坑爹
+    现在这种方式的mapper.xml是追加方式的  重新生成时记得全部删掉(不合理)
+    否则 Mybatis异常-Result Maps collection already contains value for xxx
+
+    (https://blog.csdn.net/loongshawn/article/details/51656699)
+    -->
 </generatorConfiguration>
